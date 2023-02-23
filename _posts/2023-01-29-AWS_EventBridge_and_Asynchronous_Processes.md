@@ -2,7 +2,7 @@
 title: "AWS EventBridge and Asynchronous Processes"
 date: 2023-01-29
 ---
-![Werner Vogels’ keynote from AWS re:Invent 2022](./_images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/title.png)
+![Werner Vogels’ keynote from AWS re:Invent 2022](./images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/title.png)
 
 # AWS EventBridge and Asynchronous Processes
 AWS re:Invent finished its 10th anniversary this past November, revealing the new services, applications, and innovations emerging from the online cloud giant. And while I was watching each of the keynotes and workshops (available on Youtube!), the central theme of the conference was pretty cut-and-dry: asynchronicity. In fact, Werner Vogels, the vice president and CTO of AWS, mentioned this theme several times in his [keynote](https://www.youtube.com/watch?v=RfvL_423a-I&t=1690s). It's pretty obvious that with every new service that AWS releases, there is a lot of thought given to paving the way for loosely coupled, fault-tolerant, and scalable applications. But, especially in the past year, the company seems to be moving towards the notion of __event-driven architectures__.
@@ -10,7 +10,7 @@ AWS re:Invent finished its 10th anniversary this past November, revealing the ne
 ## What is an event-driven architecture?
 Let’s take a quick and simple example, like an ordering system.
 
-![Synchronous Order Payment System](./_images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/1.png)
+![Synchronous Order Payment System](./images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/1.png)
 <!-- *Synchronous Order Payment System* -->
 
 In the diagram above, everything is __synchronous__. That means after the user orders a product, every service has to trigger the next. And while this is fine for smaller systems, synchronous processes are susceptible to failures. For example, imagine if the Payment API failed. Since it’s tightly coupled in a synchronous process, this means the entire process fails without a clean way to recover. Okay, maybe there aren’t that many possible failures. Why would a synchronous program be damaging? Well, if we wanted to add a new service, such as a service that checks whether there is any product left to ship, we would have to rework the entire system just to fit our new microservice in. If this same system had a hundred services, adding to a synchronous process would be a nightmare, let alone testing that service. That’s where asynchronous processes shine, like the one below.
@@ -48,7 +48,7 @@ Rules can also be run on a schedule as well. They can be run at every fixed inte
 ### Event Patterns
 Every rule on an event bus has an event pattern. If the event pattern matches exactly to the incoming event, then the event is sent to the target. Otherwise it’s ignored. Event patterns match to events from an event source; they can match to all events from that event source, or go through content-filtering.
 
-![Example of content-filtering in Amazon EventBridge](./_images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/3.png)
+![Example of content-filtering in Amazon EventBridge](./images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/3.png)
 <!-- *Example of content-filtering in Amazon EventBridge* -->
 
 Content-filtering is a powerful tool that allows rules to only allow a specific subset of events through. For example, imagine a DynamoDB table consisting of credit card transactions. To prevent fraud, transactions must be approved if they are outside the user’s state of residence (Indiana) and above 300 dollars. This is exactly where content-filtering would come in.
@@ -62,7 +62,7 @@ The last step of an event process is the target. There are multitude of targets,
 
 Let’s put it all together. Looking at the diagram below, you should be able to understand what’s going on now.
 
-![EventBridge Process](./_images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/4.png)
+![EventBridge Process](./images/2023-01-29-AWS_EventBridge_and_Asynchronous_Processes/4.png)
 <!-- *EventBridge Process* -->
 
 There’s an __event__ that is being injested by multiple different __event buses__. Each of these event buses has their own set of __rules__, each defining their own __event pattern__. After filtering and matching the event, the rules send the event to their __targets__ for processing, whether that be an AWS target, or a SaaS partner application.

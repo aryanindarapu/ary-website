@@ -2,7 +2,7 @@
 title: "ChatGPT vs Bard: Who will win the battle of AI"
 date: 2023-02-23
 ---
-![ChatGPT vs Bard](../_images/2023-02-23-ChatGPT_vs_Bard%3A_Who_will_win_the_battle_of_AI/title.png)
+![ChatGPT vs Bard](../images/2023-02-23-ChatGPT_vs_Bard%3A_Who_will_win_the_battle_of_AI/title.png)
 
 # ChatGPT vs Bard: Who will win the battle of AI?
 The moment that ChatGPT launched last November, I think we all realized how much of a game-changer this tool was. If you (somehow) haven’t heard of ChatGPT, it’s a chatbot AI built by OpenAI (the same company that made DALL E-2), capable of sustaining conversations with a reply feature. There were talks of this tool replacing Google itself, when Microsoft dropped some bombshell news: they would be integrating ChatGPT’s responses with Bing. The stage seemed to have been set for Microsoft to take over the search engine game. And in response, Google announced their own AI chatbot service: Bard. Through these last couple of months, I feel like we are seeing a war that’s the first of its kind- a war to develop the best AI.
@@ -14,12 +14,12 @@ Realistically, I think that neither ChatGPT nor Bard are ready for search engine
 Google and Bing work well since they solely show results that match the inquiry. If that information is wrong, it’s not Google’s fault, you just have to make sure the source is reliable. With these AI chatbots, there is no user selection — the information presented is shown as fact. A really simple example of this happened during Bard’s launch event, where the AI responded with incorrect information about the James Webb Telescope.
 
 
-![Incorrect information given by Bard AI Chatbot](../_images/2023-02-23-ChatGPT_vs_Bard%3A_Who_will_win_the_battle_of_AI/1.jpg "Incorrect information given by Bard AI Chatbot")
+![Incorrect information given by Bard AI Chatbot](../images/2023-02-23-ChatGPT_vs_Bard%3A_Who_will_win_the_battle_of_AI/1.jpg "Incorrect information given by Bard AI Chatbot")
 
 
 And this issue isn’t limited to Bard. If you ask ChatGPT for a table of information about different Bluetooth versions, a lot of the data is incorrect.
 
-![Incorrect information given by ChatGPT AI Chatbot](../_images/2023-02-23-ChatGPT_vs_Bard%3A_Who_will_win_the_battle_of_AI/2.png "IIncorrect information given by ChatGPT AI Chatbot")
+![Incorrect information given by ChatGPT AI Chatbot](../images/2023-02-23-ChatGPT_vs_Bard%3A_Who_will_win_the_battle_of_AI/2.png "IIncorrect information given by ChatGPT AI Chatbot")
 
 So then the question becomes: how do you prevent factual inaccuracies? Well, I think that can only come from what both Microsoft and Google are trying to do. By leveraging the top search results for a given phrase, the chatbot is more likely to give a better response based on that top search result.
 
