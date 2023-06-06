@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.tabbedArea {
+  /* font-family: sans-serif; */
+  text-align: center;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+}
+
+.pageContainerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 3vw; */
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vw;
+}
+
+.pageContainerExp {
+  display: flex;
+  flex-direction: column;
+  /* align-items: left;
+  justify-content: left; */
+  padding-top: 3vw;
+}
+
+.pageContainerBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 3vw;
+}
+
+
+.descriptionExp {
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+  font-size: 1rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.descriptionExp p {
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+  font-size: 7rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+  
+  
+.mainFace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.icons {
+  
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 6vw;
+  height: 2.5vw;
+  display: inline-block;
+  /* padding: 5px; */
+}
+
+.iconSmall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1.3em;
+  height: 1.3em;
+  /* display: inline-block; */
+  /* padding: 5px; */
+}
+
+.description {
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.description p {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  font-size: 1.7rem;
+}
+
+.descriptionBlog h4 {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.descriptionBlog p {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  color: #5c5c5c;
+}

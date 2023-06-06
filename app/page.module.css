@@ -9,7 +9,7 @@
 
 .description {
   display: inherit;
-  justify-content: inherit;
+  justify-content: center;
   align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
@@ -18,12 +18,34 @@
   font-family: var(--font-mono);
 }
 
-.description a {
+.tabHeader {
+  justify-content: center;
+  align-items: inherit;
+  font-size: 1.28em;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.tabHeaderRes {
+  justify-content: center;
+  align-items: inherit;
+  font-size: 1.28em;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+  padding: 10px;
+}
+
+
+/* .description a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-}
+} */
 
 .description p {
   position: relative;
@@ -34,6 +56,8 @@
   border-radius: var(--border-radius);
 }
 
+
+
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -41,9 +65,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(3, minmax(33.33%, auto));
   width: var(--max-width);
-  max-width: 100%;
+  max-width: 60%;
 }
 
 .card {
