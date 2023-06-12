@@ -33,7 +33,13 @@ export const blogData = [
     {
         id: 5,
         name: "The Forgotten Piece of the AI Industry",
-        date: "Jun 25, 2023",
+        date: "Jun 5, 2023",
         link: "https://medium.com/@aryind/the-forgotten-piece-of-the-ai-industry-abe5a3168ec7"
+    },
+    {
+        id: 6,
+        name: "Not All Infinities Are Made Equal: Part 1",
+        date: "Jun 12, 2023",
+        link: "https://medium.com/@aryind/not-all-infinities-are-made-equal-part-1-4676bb2d318c"
     }
 ]
