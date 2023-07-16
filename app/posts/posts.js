@@ -41,5 +41,17 @@ export const blogData = [
         name: "Not All Infinities Are Made Equal: Part 1",
         date: "Jun 12, 2023",
         link: "https://medium.com/@aryind/not-all-infinities-are-made-equal-part-1-4676bb2d318c"
+    },
+    {
+        id: 7,
+        name: "Not All Infinities Are Made Equal: Part 2",
+        date: "Jun 19, 2023",
+        link: "https://medium.com/@aryind/not-all-infinities-are-made-equal-part-2-b971c8377940"
+    },
+    {
+        id: 8,
+        name: "Not All Infinities Are Made Equal: Part 3",
+        date: "Jul 14, 2023",
+        link: "https://medium.com/@aryind/not-all-infinities-are-made-equal-part-3-abac18f0e5f7"
     }
 ]
