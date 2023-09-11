@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css';
 import styles from './page.module.css'
 import styled from "styled-components";
@@ -11,18 +11,12 @@ import {AiFillGithub, AiFillLinkedin, AiFillMediumSquare, AiOutlineDownload} fro
 export const Page1 = () => {
     return (
         <div className="pageContainerHome">
-            <div class="row">
-                <Image src={profilePic} alt="My Face!" width={200} height={200} />
-            </div>
-            <div class="row" style={{padding: 10}}>
-                <h1>Ary Indarapu</h1>
-            </div>
-            <div class="row" className="description">
+            <Image className="pageContainerHomeElement" src={profilePic} alt="My Face!" width={200} height={200} />
+            <h1 className="pageContainerHomeElement">Ary Indarapu</h1>
+            <div className="pageContainerHomeElement description">
                 <h3>University of Illinois Urbana-Champaign</h3>
             </div>
-            <div class="row">
-                <p>Computer Engineering</p>
-            </div>
+            <p className="pageContainerHomeElement">Computer Engineering</p>
             <div className={styles.grid}>
                 <a
                     href="https://github.com/aryanindarapu"

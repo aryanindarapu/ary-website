@@ -2,7 +2,7 @@
 
 import "./styles.css";
 import styles from './page.module.css'
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import s from "csd";
 import { Page1, Page2 } from './pages'
@@ -66,23 +66,26 @@ const StyledTabs = styled.div`
 `;
 
 const Tabs = ({ focusedIdx, children, onChange, duration = 300 }) => {
+
   return (
-    <StyledTabs>
-      {React.Children.map(children, (child, i) =>
-        React.cloneElement(child, {
-          key: i,
-          isFocused: focusedIdx === i,
-          onClick: (e) => {
-            onChange(i);
-          }
-        })
-      )}
-      {/* <StyledTabIndicator
-        duration={duration}
-        tabCount={children.length}
-        offset={`${100 * focusedIdx}%`}
-      /> */}
-    </StyledTabs>
+    <>
+      <StyledTabs>
+        {React.Children.map(children, (child, i) =>
+          React.cloneElement(child, {
+            key: i,
+            isFocused: focusedIdx === i,
+            onClick: (e) => {
+              onChange(i);
+            }
+          })
+        )}
+        {/* <StyledTabIndicator
+          duration={duration}
+          tabCount={children.length}
+          offset={`${100 * focusedIdx}%`}
+        /> */}
+      </StyledTabs>
+    </>
   );
 };
 
@@ -136,3 +139,22 @@ export const TabSliders = () => {
         </div>
     )
 }
+
+export const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  return (
+      <div>
+          <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+              Menu
+          </button>
+          {isOpen && (
+              <div className={`menu ${isOpen ? "open" : ""}`}>
+                  <button className="menu-item" onClick={() => setIsOpen(false)}>Page 1</button>
+                  <button className="menu-item" onClick={() => setIsOpen(false)}>Page 2</button>
+                  <button className="menu-item" onClick={() => setIsOpen(false)}>Page 3</button>
+              </div>
+          )}
+      </div>
+  );
+};
